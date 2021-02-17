@@ -46,4 +46,12 @@ $(document).ready(function () {
         listSearchResults(cityChoice);
     })
 
+    // Lists results from searched city
+    function listSearchResults(city) {
+        var formerCity = $("<button>");
+        formerCity.text(city);
+        formerCity.addClass("button cityBtn")
+        searchHistoryEl.append(formerCity);
+    }
+
 }); // End of document.ready()
