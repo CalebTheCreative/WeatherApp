@@ -8,3 +8,13 @@ body {
   text-align: center;
   padding: 10px;
 }
+
+#fiveDaySet {
+  display: flex;
+  flex-direction: row;
+  justify-content: center/space-between;
+}
+
+.forecast {
+  margin: 10px;
+}
