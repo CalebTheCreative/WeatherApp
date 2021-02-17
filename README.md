@@ -8,9 +8,11 @@ This is a dashboard app that utilizes OpenWeather API. It retrieves data from th
 ## Screenshots
 * * *
 The search bar:
+
 ![Screenshot1](weatherSS1.png)
 
-The Weather Dashboard with results
+The Weather Dashboard with results:
+
 ![Screenshot2](weatherSS2.png)
 
 * * *
