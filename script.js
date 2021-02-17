@@ -35,4 +35,15 @@ $(document).ready(function () {
         listSearchResults(city);
     });
 
+    // Takes in search history button for result
+    $(".cityButton").on("click", function () {
+        var cityChoice = this.text
+            .val()
+            .trim()
+            .toLowerCase();
+
+        showCityInfo(cityChoice);
+        listSearchResults(cityChoice);
+    })
+
 }); // End of document.ready()
