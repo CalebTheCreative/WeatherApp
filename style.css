@@ -18,3 +18,11 @@ body {
 .forecast {
   margin: 10px;
 }
+
+input {
+  width: 75%;
+}
+
+#searchHistory {
+  width: 22rem;
+}
