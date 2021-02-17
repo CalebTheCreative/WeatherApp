@@ -50,7 +50,7 @@ $(document).ready(function () {
     function listSearchResults(city) {
         var formerCity = $("<button>");
         formerCity.text(city);
-        formerCity.addClass("button cityBtn")
+        formerCity.addClass("btn btn-secondary cityBtn")
         searchHistoryEl.append(formerCity);
     }
 
