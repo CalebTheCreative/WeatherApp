@@ -23,4 +23,16 @@ $(document).ready(function () {
     var weatherStats = $("#weatherStats");
     weatherStats.hide();
 
+    // Takes in form submission
+    citySubmitEl.on("click", function (event) {
+        event.preventDefault();
+        var city = $("#cityForm")
+            .val()
+            .trim()
+            .toLowerCase();
+
+        showCityInfo(city);
+        listSearchResults(city);
+    });
+
 }); // End of document.ready()
