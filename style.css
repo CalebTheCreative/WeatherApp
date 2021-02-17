@@ -42,3 +42,7 @@ h5 {
 h3 {
     margin: 5px;
 }
+
+#citySubmit {
+  color: white !important;
+}
