@@ -1,14 +1,26 @@
-// Current Weather API Key
-var APIKey = "e8902d84d7e295b9d390de2f5582b4b5";
+$(document).ready(function () {
+    // Variables
+    var city = $("#cityForm");
+    var citySubmitEl = $("#citySubmit");
+    var searchHistoryEl = $("#searchHistory");
+    var cityName = $("#cityName");
+    var tempNow = $("#tempNow");
+    var humidNow = $("#humidNow");
+    var windNow = $("#windNow");
+    var uvNow = $("#uvNow");
+    var uvBtnDiv = $("#uvBtnDiv");
 
-var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + "Austin" + "&units=imperial" + "&appid=" + APIKey;
+    var latitude;
+    var longitude;
 
-// AJAX call to OpenWeatherMap API
-$.ajax({
-    url: queryURL,
-    method: "GET"
-})
-    .then(function(response){
-        console.log(queryURL);
-        console.log(response);        
-    });
+    var APIKey = "e8902d84d7e295b9d390de2f5582b4b5";
+
+    var searchResults = JSON.parse(localStorage.getItem("searchResults") || "[]");
+
+    var forecastTitle = $("#forecastTitle");
+    forecastTitle.hide();
+
+    var weatherStats = $("#weatherStats");
+    weatherStats.hide();
+
+}); // End of document.ready()
